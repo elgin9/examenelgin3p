@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "662654305633",
+    "firebase_url": "https://examenelgin3p-acb6b-default-rtdb.firebaseio.com",
+    "project_id": "examenelgin3p-acb6b",
+    "storage_bucket": "examenelgin3p-acb6b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662654305633:android:6278a955e07051542af120",
+        "android_client_info": {
+          "package_name": "examen3p.examen3p"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ9NyMrLMZvIZ2jFJg38Ll7HdVFHuJ3gY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

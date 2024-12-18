@@ -6,10 +6,10 @@ namespace examenelgin3p.Models
     public class Notas
     {
         private List<string> invalidData = new List<string>();
-        private int id;
-        private string descripcion;
-        private byte[] foto;
-        private byte[] audio;
+        public int id;
+        public string descripcion;
+        public byte[] foto;
+        public byte[] audio;
 
         public DateTime Fecha { get; set; } = DateTime.Now;
 

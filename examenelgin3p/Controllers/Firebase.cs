@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 using Firebase.Database;
 using Firebase.Database.Query;
 
-
 namespace examenelgin3p.Controllers
 {
     public class FirebaseController
     {
-        private readonly string url = "https://examenelgin3p-default-rtdb.firebaseio.com/";
+        private readonly string url = "https://examenelgin3p-acb6b-default-rtdb.firebaseio.com/";
         private readonly FirebaseClient client;
         private string deleteBugRecord;
 
@@ -40,6 +39,30 @@ namespace examenelgin3p.Controllers
 
             return (lista.Count + 1);
         }
+
+
+        /*public async Task<bool> crearnotas(Notas vnotas) {
+
+            if (string.IsNullOrEmpty(vnotas.Key)) {
+
+                try
+                {
+                    Console.WriteLine("creando nota");
+                    var VNotas = await client.Child("Notas").OnceAsync<Notas>();
+                    Console.WriteLine($"Número de Notas: {VNotas.Count}");
+                    if (VNotas.Count == 0 || VNotas != null)
+                    {
+                        Console.WriteLine("No hay Notas existentes. Creando una nueva Nota...");
+                        await client.Child("Nota").PostAsync(new Notas
+                        {
+                            Id_nota = Notas,
+                            Descripcion = Notas.descripcion,
+                            Fecha = Notas.Fecha,
+                            Foto_record = Notas.foto,
+                            Audio_record = Notas.Audio
+                        }
+            }
+        }*/
 
         public async Task Insert(Notas nota)
         {

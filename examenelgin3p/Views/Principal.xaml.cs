@@ -95,7 +95,7 @@ public partial class Principal : ContentPage
         }
         else
         {
-            await DisplayAlert("Grabar", "NO HAY PERMISO PARA GRABAR AUDIO!!!!", "aceptar");
+            await DisplayAlert("Grabar", "No se concedieron permisos para grabar", "aceptar");
         }
     }
     private async void OnBtnGuardarClicked(object sender, EventArgs e)
@@ -147,23 +147,23 @@ public partial class Principal : ContentPage
             await DisplayAlert("Guardar", ex.Message, "aceptar");
         }
     }
-    
+    //
     private async void OnBtnListaClicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new Lista());
     }
-    
+    //
     private void SetAudioButtonStyle(string ico, Color color)
     {
         btnBtnStartRecording.BackgroundColor = color;
         btnBtnStartRecording.ImageSource = new FileImageSource().File = ico;
     }
-    
+    //
     public void OnBtnLimpiarClicked(object sender, EventArgs e)
     {
         LimpiarCampos();
     }
-    
+    //
     private void LimpiarCampos()
     {
         audioArray = new byte[0];

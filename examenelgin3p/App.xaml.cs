@@ -14,7 +14,7 @@ namespace examenelgin3p
         {
             InitializeComponent();
 
-            //MainPage = new AppShell();
+           
             MainPage = new NavigationPage(new Principal(AudioManager.Current));
 
         }
