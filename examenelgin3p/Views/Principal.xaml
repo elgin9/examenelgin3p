@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="examenelgin3p.Views.Principal"
+             Title="EXAMEN ELGIN MALDONADO"
+             BackgroundColor="White">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            Text="·"
+            Clicked="OnBtnLimpiarClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout>
+        <StackLayout 
+            Spacing="20" 
+            Padding="20">
+
+            
+            <Frame 
+                CornerRadius="10" 
+                Padding="5" 
+                HeightRequest="180"
+                HorizontalOptions="FillAndExpand">
+                <StackLayout>
+                    <Image 
+                        x:Name="imgFoto"
+                        Aspect="AspectFill"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        HeightRequest="120" 
+                        BackgroundColor="White"/>
+                    <Button 
+                        Text="tomar foto"
+                        Clicked="OnBtnFotoClicked"
+                        WidthRequest="150"
+                        HeightRequest="50"
+                        FontSize="20"
+                        BackgroundColor="#2b0098"
+                        CornerRadius="50"/>
+                </StackLayout>
+            </Frame>
+
+            
+            <Frame Padding="0" HeightRequest="180">
+                <StackLayout>
+                    <Label 
+                        Text="NOTA DE VOZ" 
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Margin="0, 20, 0, 20"/>
+
+                    <Button 
+                        Margin="0,0,0,20"
+                        x:Name="btnBtnStartRecording"
+                        Text="¡GRABAR Y DETENER!"
+                        Clicked="OnBtnStartRecordingClicked"
+                        CornerRadius="50"
+                        WidthRequest="300"
+                        HeightRequest="50"
+                        FontSize="16"
+                        BackgroundColor="#2b0098"
+                        VerticalOptions="End"/>
+                </StackLayout>
+            </Frame>
+
+           
+            <Frame 
+                CornerRadius="10" 
+                Padding="5" 
+                HeightRequest="180">
+                <StackLayout>
+                    <Label 
+                        Margin="0,20,0,20"
+                        Text="DESCRIPCION"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"/>
+
+                    <Editor 
+                        x:Name="txtDescripcion" 
+                        Keyboard="Chat" 
+                        HeightRequest="120"/>
+                </StackLayout>
+            </Frame>
+
+           
+            <StackLayout>
+                <Button 
+                    Margin="0,0,0,10"
+                    Text="GUARDAR"
+                    FontSize="16"
+                    CornerRadius="50"
+                    Clicked="OnBtnGuardarClicked"
+                    WidthRequest="250"
+                    HeightRequest="45"
+                    BackgroundColor="#2b0098"
+                    HorizontalOptions="Center"/>
+
+                <Button 
+                    Text="NOTAS"
+                    FontSize="16"
+                    WidthRequest="250"
+                    HeightRequest="45"
+                    CornerRadius="50"
+                    Clicked="OnBtnListaClicked"
+                    BackgroundColor="#2b0098"
+                    HorizontalOptions="Center"/>
+            </StackLayout>
+
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

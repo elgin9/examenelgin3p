@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="examenelgin3p.Views.VerNota"
+             Title="DETALLE DE NOTA">
+    <VerticalStackLayout>
+        <StackLayout Spacing="60" Padding="60">
+
+            <Label x:Name="lblDescripcion" 
+                   Text="{Binding Descripcion}"
+                   HeightRequest="150" 
+                   FontSize="16"
+                   BackgroundColor="White"/>
+
+            <Button 
+                Text="Ver foto"
+                BackgroundColor="#2b0098"
+                FontSize="16"
+                CornerRadius="20"
+                WidthRequest="250"
+                Clicked="OnBtnPictureClicked"/>
+
+            <Button 
+                Text="Audio"
+                x:Name="btnPlay"
+                FontSize="16"
+                CornerRadius="20"
+                WidthRequest="250"
+                BackgroundColor="#2b0098"
+                Clicked="OnBtnPlayClicked"/>
+
+            <Button 
+                Text="Actualizar +"
+                FontSize="16"
+                CornerRadius="20"
+                WidthRequest="250"
+                BackgroundColor="#2b0098"
+                Clicked="OnBtnEditClicked"/>
+
+            <Button 
+                Text="Eliminar!!"
+                BackgroundColor="#2b0098"
+                FontSize="16"
+                CornerRadius="20"
+                WidthRequest="250"
+                VerticalOptions="EndAndExpand"
+                Clicked="OnBtnDeleteClicked"/>
+
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
